@@ -1,0 +1,11 @@
+{
+  "name": "chavruta",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Conny Kawohl <conny.kawohl@useeds.de>",
+  "license": "MIT",
+  "dependencies": {
+    "amdefine": "^1.0.1",
+    "stablematch": "^0.0.4"
+  }
+}
