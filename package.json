@@ -6,6 +6,10 @@
   "license": "MIT",
   "dependencies": {
     "amdefine": "^1.0.1",
+    "express": "^4.15.2",
     "stablematch": "^0.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
   }
 }
