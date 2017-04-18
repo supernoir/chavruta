@@ -1,9 +1,23 @@
-'use strict'
+'use strict';
 
-const express = require('express')
-const app = express()
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-const port = 5445 || process.env.PORT
+class App extends React.Component {
+    constructor(){
+        super()
+    }
+    render(){
+        return (
+            <div>
+                <h1>Chavruta - חַבְרוּתָא</h1>
+            </div>
+        )
+    }
+}
 
-app.listen(port)
-console.log(`Server listening on port ${port}`)
+ReactDOM.render(
+    <App />, document.getElementById('app')
+)
+
+export default App

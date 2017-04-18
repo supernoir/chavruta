@@ -4,12 +4,32 @@
   "main": "index.js",
   "author": "Conny Kawohl <conny.kawohl@useeds.de>",
   "license": "MIT",
+  "scripts": {
+    "test": "mocha",
+    "build": "webpack --optimize-minimize",
+    "start": "webpack-dev-server & sass --watch ./css"
+  },
   "dependencies": {
     "amdefine": "^1.0.1",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.0",
     "express": "^4.15.2",
-    "stablematch": "^0.0.4"
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "sass": "^0.5.0",
+    "sass-loader": "^6.0.3",
+    "spectre.css": "^0.2.13",
+    "stablematch": "^0.0.4",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.2"
   },
   "devDependencies": {
+    "node-sass": "^4.5.2",
     "nodemon": "^1.11.0"
   }
 }

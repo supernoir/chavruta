@@ -1,0 +1,27 @@
+{
+  "users": [
+    {
+    "name": "Jael Bat Meir",
+    "location": "Paris, France",
+    "interest": "Mishna Yomit"
+    
+    },
+    {  
+
+        "name": "Miriam bat Avraham",
+        "location": "Berlin, Germany",
+        "interest": "Kuzari"
+    },
+    {
+        "name": "Rachel Levy",
+        "location": "New York City, USA",
+        "interest": "Mishna Yomit"
+        
+    },
+    {
+        "name": "Ayelet Shahar",
+        "location": "Jerusalem, Israel",
+        "interest": "Kuzari"
+    }
+  ]
+}
