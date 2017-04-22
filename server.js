@@ -5,7 +5,7 @@ const app = express()
 const fs = ('fs')
 
 
-const port = 5445 || process.env.PORT
+const port = process.env.PORT
 
 
 // External files

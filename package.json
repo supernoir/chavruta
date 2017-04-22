@@ -2,12 +2,8 @@
   "name": "chavruta",
   "version": "0.0.1",
   "main": "index.js",
-  "author": "Conny Kawohl <conny.kawohl@useeds.de>",
   "license": "MIT",
   "scripts": {
-    "test": "mocha",
-    "build": "webpack --optimize-minimize",
-    "frontend": "webpack-dev-server & sass --watch ./css",
     "start": "node server.js"
   },
   "dependencies": {

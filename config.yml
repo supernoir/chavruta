@@ -1,6 +1,0 @@
-default:
-    port: 5445
-    cache_assets: true
-
-development:
-    cache_assets: false
