@@ -10,7 +10,7 @@ class App extends React.Component {
     render(){
         return (
             <div>
-                <h1>Chavruta - חַבְרוּתָא</h1>
+                <h1>Chavruta</h1>
             </div>
         )
     }
