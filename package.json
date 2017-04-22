@@ -4,7 +4,9 @@
   "main": "server.js",
   "license": "MIT",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js; webpack-dev-server & sass --watch ./css",
+    "test": "mocha tests/*.test.js",
+    "frontend": "webpack-dev-server & sass --watch ./css"
   },
   "dependencies": {
     "amdefine": "^1.0.1",
