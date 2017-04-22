@@ -2,6 +2,8 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import axios from 'axios';
+import { Router, Route, Link, hashHistory, browserHistory } from 'react-router';
 
 import UserList from './components/UserList'
 
@@ -38,6 +40,12 @@ class App extends React.Component {
     }
     render(){
         return (
+        <Router history={hashHistory}>
+            <Route path='/' component={Feed} />
+            <Route path='/newpost' component={NewPost} />
+            <Route path='/login' component={Login} />
+            <Route path='*' component={NotFound} />
+        </Router>
             <div>
                 <h1>Chavruta</h1>
                 <Table />
