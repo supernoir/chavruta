@@ -3,97 +3,93 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
-import { Router, Route, Link, hashHistory, browserHistory } from 'react-router';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import Table from './components/Table'
 
-import UserList from './components/UserList'
+const Home = () => {
+    return (
+    <div>
+        <h1>Home</h1>
+        <Table />
+    </div>
+    )
+}
 
-const users = [
-    {
-      "name": "Jael Bat Meir",
-      "location": "Paris, France",
-      "gender": "Female",
-      "interests": "Mishna Yomit"
-    },
-    {
-      "name": "Miriam bat Avraham",
-      "location": "Berlin, Germany",
-      "gender": "Female",
-      "interests": "Kuzari"
-    },
-    {
-      "name": "Rachel Levy",
-      "location": "New York City, USA",
-      "gender": "Female",
-      "interests": "Mishna Yomit"
-    },
-    {
-      "name": "Ayelet Shahar",
-      "location": "Jerusalem, Israel",
-      "gender": "Female",
-      "interests": "Kuzari"
-    },
-]
+const Friends = () => {
+    return (
+        <article>
+            <h1>Friends</h1>
+        </article>
+    )
+}
+
+const Profile = () => {
+    return (
+        <article>
+            <h1>Profile</h1>
+        </article>
+    )
+}
+
+const Login = () => {
+    return (
+        <article>
+            <h1>Login</h1>
+        </article>
+    )
+}
+
+const Menu = () => {
+    return (
+    <header className="navbar">
+    <section className="navbar-section">
+        <a href="#" className="navbar-brand mr-10">
+            <Link to="/">chavruta.io</Link>
+        </a>
+        <a href="#" className="btn btn-link">
+            <Link to="/">Home</Link>
+        </a>
+        <a href="#" className="btn btn-link">
+            <Link to="/friends">Friends</Link>
+        </a>
+        <a href="#" className="btn btn-link">
+            <Link to="/profile">Profile</Link>
+        </a>
+    </section>
+    <section className="navbar-section">
+        <div className="input-group input-inline">
+        <input className="form-input" type="text" placeholder="Search" />
+        <button className="btn btn-primary input-group-btn">Search</button>
+        </div>
+            <a href="#" className="btn btn-link">
+            <Link to="/logout">Logout</Link>
+        </a>
+    </section>
+    </header>      
+    )
+}
 
 class App extends React.Component {
-    constructor(){
-        super()
-    }
     render(){
         return (
-        <Router history={hashHistory}>
-            <Route path='/' component={Feed} />
-            <Route path='/newpost' component={NewPost} />
-            <Route path='/login' component={Login} />
-            <Route path='*' component={NotFound} />
-        </Router>
-            <div>
-                <h1>Chavruta</h1>
-                <Table />
-            </div>
+            <Router>
+                <div>
+                <Menu />
+
+                <hr/>
+
+                <Route exact path="/" component={Home}/>
+                <Route path="/friends" component={Friends}/>
+                <Route path="/profile" component={Profile}/>
+                </div>
+            </Router>
         )
     }
 }
 
-let Table = () => {
-    return (
-        <table>
-            <TableHead />
-            <TableRows />
-        </table>
-    )
-}
 
-let TableHead = () => {
-    return (
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Location</th>
-                <th>Gender</th>
-                <th>Interests</th>
-            </tr>
-        </thead>
-    )
-}
 
-class TableRows extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            users: users
-        }
-    }
 
-    render() {
-        return (
-            <tbody>
-            {this.state.users.map((user) => (
-                <UserList key={user.id} name={user.name} location={user.location} gender={user.gender} interests={user.interests} />
-            ))}
-            </tbody>
-        )
-    }
-}
 
 ReactDOM.render(
     <App />, document.getElementById('app')
