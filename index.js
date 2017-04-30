@@ -7,6 +7,9 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Table from './components/Table';
 import Menu from './components/Menu';
 import Card from './components/Card';
+import Timeline from './components/Timeline';
+import Login from './components/Login';
+
 const Home = () => {
   return (
     <div>
@@ -33,6 +36,15 @@ const Matches = () => {
   );
 };
 
+const History = () => {
+  return (
+    <article>
+      <h1>History</h1>
+      <Timeline />
+    </article>
+  );
+};
+
 const Profile = () => {
   return (
     <article>
@@ -41,10 +53,11 @@ const Profile = () => {
   );
 };
 
-const Login = () => {
+const LoginForm = () => {
   return (
     <article>
       <h1>Login</h1>
+      <Login />
     </article>
   );
 };
@@ -61,7 +74,9 @@ class App extends React.Component {
           <Route exact path="/" component={Home} />
           <Route path="/matches" component={Matches} />
           <Route path="/friends" component={Friends} />
+          <Route path="/history" component={History} />
           <Route path="/profile" component={Profile} />
+          <Route path="/login" component={LoginForm} />
         </div>
       </Router>
     );

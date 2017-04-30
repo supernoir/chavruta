@@ -1,75 +1,80 @@
-
-import React from 'react'
-import UserList from './UserList'
+import React from 'react';
+import UserList from './UserList';
 
 const users = [
-    {
-      "name": "Jael Bat Meir",
-      "location": "Paris, France",
-      "gender": "Female",
-      "interests": "Mishna Yomit"
-    },
-    {
-      "name": "Miriam bat Avraham",
-      "location": "Berlin, Germany",
-      "gender": "Female",
-      "interests": "Kuzari"
-    },
-    {
-      "name": "Rachel Levy",
-      "location": "New York City, USA",
-      "gender": "Female",
-      "interests": "Mishna Yomit"
-    },
-    {
-      "name": "Ayelet Shahar",
-      "location": "Jerusalem, Israel",
-      "gender": "Female",
-      "interests": "Kuzari"
-    },
-]
+  {
+    name: 'Jael Bat Meir',
+    location: 'Paris, France',
+    gender: 'Female',
+    interests: 'Mishna Yomit'
+  },
+  {
+    name: 'Miriam bat Avraham',
+    location: 'Berlin, Germany',
+    gender: 'Female',
+    interests: 'Kuzari'
+  },
+  {
+    name: 'Rachel Levy',
+    location: 'New York City, USA',
+    gender: 'Female',
+    interests: 'Mishna Yomit'
+  },
+  {
+    name: 'Ayelet Shahar',
+    location: 'Jerusalem, Israel',
+    gender: 'Female',
+    interests: 'Kuzari'
+  }
+];
 
 class Table extends React.Component {
-    render(){
-        return (
-        <table>
-            <TableHead />
-            <TableRows />
-        </table>
-        )
-    }
+  render() {
+    return (
+      <table className="table table-striped table-hover">
+        <TableHead />
+        <TableRows />
+      </table>
+    );
+  }
 }
 
 let TableHead = () => {
-    return (
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Location</th>
-                <th>Gender</th>
-                <th>Interests</th>
-            </tr>
-        </thead>
-    )
-}
+  return (
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Gender</th>
+        <th>Interests</th>
+      </tr>
+    </thead>
+  );
+};
 
 class TableRows extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            users: users
-        }
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      users: users
+    };
+  }
 
-    render() {
-        return (
-            <tbody>
-            {this.state.users.map((user) => (
-                <UserList key={user.id} name={user.name} location={user.location} gender={user.gender} interests={user.interests} />
-            ))}
-            </tbody>
-        )
-    }
+  render() {
+    return (
+      <tbody>
+        {this.state.users.map(user => (
+          <UserList
+            key={user.id}
+            name={user.name}
+            location={user.location}
+            gender={user.gender}
+            interests={user.interests}
+          />
+        ))}
+      </tbody>
+    );
+  }
 }
 
-export default Table
+export default Table;

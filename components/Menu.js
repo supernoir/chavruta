@@ -18,6 +18,9 @@ const Menu = () => {
           <Link to="/friends">Friends</Link>
         </a>
         <a href="#" className="btn btn-link">
+          <Link to="/history">History</Link>
+        </a>
+        <a href="#" className="btn btn-link">
           <Link to="/profile">Profile</Link>
         </a>
       </section>
@@ -27,7 +30,7 @@ const Menu = () => {
           <button className="btn btn-primary input-group-btn">Search</button>
         </div>
         <a href="#" className="btn btn-link">
-          <Link to="/logout">Logout</Link>
+          <Link to="/login">Login</Link>
         </a>
       </section>
     </header>
