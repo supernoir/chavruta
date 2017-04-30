@@ -2,27 +2,6 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-<<<<<<< Updated upstream
-
-class App extends React.Component {
-    constructor(){
-        super()
-    }
-    render(){
-        return (
-            <div>
-                <h1>Chavruta</h1>
-            </div>
-        )
-    }
-}
-
-ReactDOM.render(
-    <App />, document.getElementById('app')
-)
-
-export default App
-=======
 import axios from 'axios';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Table from './components/Table';
@@ -92,4 +71,3 @@ class App extends React.Component {
 ReactDOM.render(<App />, document.getElementById('app'));
 
 export default App;
->>>>>>> Stashed changes
