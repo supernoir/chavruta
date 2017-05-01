@@ -9,20 +9,20 @@ import Menu from './components/Menu';
 import Card from './components/Card';
 import Timeline from './components/Timeline';
 import Login from './components/Login';
-import Header from './components/Header'
+import Header from './components/Header';
 
 const Home = () => {
   return (
-    <div>
+    <article className="page-body">
       <h1>Home</h1>
       <Table />
-    </div>
+    </article>
   );
 };
 
 const Friends = () => {
   return (
-    <article>
+    <article className="page-body">
       <h1>Friends</h1>
       <Card />
     </article>
@@ -31,7 +31,7 @@ const Friends = () => {
 
 const Matches = () => {
   return (
-    <article>
+    <article className="page-body">
       <h1>Matches</h1>
     </article>
   );
@@ -39,7 +39,7 @@ const Matches = () => {
 
 const History = () => {
   return (
-    <article>
+    <article className="page-body">
       <h1>History</h1>
       <Timeline />
     </article>
@@ -48,7 +48,7 @@ const History = () => {
 
 const Profile = () => {
   return (
-    <article>
+    <article className="page-body">
       <h1>Profile</h1>
     </article>
   );
@@ -56,7 +56,7 @@ const Profile = () => {
 
 const LoginForm = () => {
   return (
-    <article>
+    <article className="page-body">
       <h1>Login</h1>
       <Login />
     </article>
@@ -68,10 +68,8 @@ class App extends React.Component {
     return (
       <Router>
         <div>
-        <Header />
+          <Header />
           <Menu />
-
-          <hr />
 
           <Route exact path="/" component={Home} />
           <Route path="/matches" component={Matches} />
