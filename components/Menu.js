@@ -5,9 +5,6 @@ const Menu = () => {
   return (
     <header className="navbar">
       <section className="navbar-section">
-        <a href="#" className="navbar-brand mr-10">
-          <Link to="/">chavruta.io</Link>
-        </a>
         <a href="#" className="btn btn-link">
           <Link to="/">Home</Link>
         </a>

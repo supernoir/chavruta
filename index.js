@@ -9,6 +9,7 @@ import Menu from './components/Menu';
 import Card from './components/Card';
 import Timeline from './components/Timeline';
 import Login from './components/Login';
+import Header from './components/Header'
 
 const Home = () => {
   return (
@@ -67,6 +68,7 @@ class App extends React.Component {
     return (
       <Router>
         <div>
+        <Header />
           <Menu />
 
           <hr />
