@@ -14,7 +14,7 @@ class UserList extends React.Component {
 
   render() {
     return (
-      <tr>
+      <tr className="table-row">
         <td>{this.props.name}</td>
         <td>{this.props.location}</td>
         <td>{this.props.gender}</td>

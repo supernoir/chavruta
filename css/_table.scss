@@ -1,0 +1,19 @@
+.table{
+  text-align: left;
+  margin: 2px;
+  padding: 6px;
+  border: 0px;
+}
+
+.table-head{
+}
+
+.table-body{
+  background: $white;
+}
+
+.table-row{
+  &:nth-child(odd){
+    background-color: $light-grey;
+  }
+}

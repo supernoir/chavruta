@@ -1,15 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Merriweather|Alef|Rubik|Secular+One");
-body {
-  background: linear-gradient(to bottom, #fafafa, gainsboro);
-  background-color: gainsboro;
-  /*background-image: url('../public/img/rob-bye-98954.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;*/
-  font-family: 'Lato','Helvetica','Arial', sans-serif;
-  color: #50143c;
-  margin: 0;
-  padding: 0; }
-
 .header {
   text-align: center;
   margin: 10px 25%;
@@ -30,6 +19,32 @@ body {
 .header-subheadline {
   color: #f0b400; }
 
+.table {
+  text-align: left;
+  margin: 2px;
+  padding: 6px;
+  border: 0px; }
+
+.table-body {
+  background: #fafafa; }
+
+.table-row:nth-child(odd) {
+  background-color: gainsboro; }
+
+body {
+  background: -webkit-linear-gradient(#fafafa, gainsboro);
+  background: -moz-linear-gradient(#fafafa, gainsboro);
+  background: -o-linear-gradient(#fafafa, gainsboro);
+  background: linear-gradient(#fafafa, gainsboro);
+  background-color: gainsboro;
+  /*background-image: url('../public/img/rob-bye-98954.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;*/
+  font-family: "Lato", "Helvetica", "Arial", sans-serif;
+  color: #50143c;
+  margin: 0;
+  padding: 0; }
+
 .page-container {
   margin: 0px;
   text-align: center; }
@@ -45,11 +60,27 @@ body {
   border-bottom: 1px solid #c8003c; }
 
 a {
-  color: #8c0a3c;
+  color: #c8003c;
   text-decoration: none;
-  font-weight: bold; }
+  font-weight: bold;
+  background: none; }
 
 a:hover {
-  text-decoration: underline; }
+  color: #8c0a3c;
+  text-decoration: none; }
+
+a.btn {
+  padding: 8px;
+  margin: 6px;
+  border: 1px solid #c8003c;
+  border-radius: 4px;
+  background: none;
+  font-size: 16px;
+  font-weight: 400; }
+  a.btn:hover {
+    color: #8c0a3c;
+    border: 1px solid #8c0a3c;
+    text-decoration: none;
+    background: rgba(140, 10, 60, 0.1); }
 
 /*# sourceMappingURL=app.css.map */

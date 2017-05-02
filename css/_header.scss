@@ -1,0 +1,29 @@
+.header{
+
+  text-align: center;
+  margin: 10px 25%;
+  width: 210px;
+  padding: 4px;
+  border: 6px solid $red;
+  //border-radius: 16px;
+ // background: linear-gradient(to bottom, $orange, $maroon);
+
+}
+
+.header-headline{
+
+  width: 110px;
+  font-family: 'Alef', serif;
+  font-weight: 300;
+  font-size: 62px;
+  text-align: center;
+  color: $red;
+  padding: 0px;
+  margin: 0px;
+  //text-shadow: 0px 2px 0px $maroon;
+
+}
+
+.header-subheadline{
+  color: $yellow;
+}

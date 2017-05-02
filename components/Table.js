@@ -31,7 +31,7 @@ const users = [
 class Table extends React.Component {
   render() {
     return (
-      <table className="table table-striped table-hover">
+      <table className="table">
         <TableHead />
         <TableRows />
       </table>
@@ -41,7 +41,7 @@ class Table extends React.Component {
 
 let TableHead = () => {
   return (
-    <thead>
+    <thead className="table-head">
       <tr>
         <th>Name</th>
         <th>Location</th>
@@ -62,7 +62,7 @@ class TableRows extends React.Component {
 
   render() {
     return (
-      <tbody>
+      <tbody className="table-body">
         {this.state.users.map(user => (
           <UserList
             key={user.id}
