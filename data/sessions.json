@@ -1,0 +1,30 @@
+{
+  "sessions": [
+    {
+      "id": 1,
+      "date": "Tuesday, January 22, 2019",
+      "chavruta": {
+        "id": 2,
+        "name": "Rachel Levy"
+      },
+      "progress":[{
+        "type": "Daf Yomi",
+        "startedAt":"Daf 4, Amud 2",
+        "endedAt":"Daf 5, Amud 4"
+      }]
+    },
+    {
+      "id": 2,
+      "date": "Sunday, April 1, 2019",
+      "chavruta": {
+        "id": 1,
+        "name": "Michal Lowenstein"
+      },
+      "progress":[{
+        "type": "Tanya",
+        "startedAt":"Page 22",
+        "endedAt":"Page 29"
+      }]
+    }
+  ]
+}
